@@ -21,7 +21,7 @@ export default function NotFound() {
             className="text-lg md:text-3xl text-subheading text-center font-semibold"
             style={{ lineHeight: "1.2" }}
           >
-            Page Not Found <br /> (Might be Still Development)
+            Oops! This Page is Missing <br /> (We’re still working on it)
           </h2>
         </Fade>
         <Fade triggerOnce direction="up">
