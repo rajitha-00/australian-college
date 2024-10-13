@@ -38,7 +38,7 @@ export const UniversitiesSection = () => {
           subTitle="Discover Endless Opportunities Down Under!"
           title="Study in Australia,"
           title2="Edith Cowan University, Perth"
-          button="Head to Australia for Your Global Future!"
+          button="Take the Leap to Australia!"
         />
       </div>
     </div>

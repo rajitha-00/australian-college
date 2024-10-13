@@ -6,7 +6,7 @@ export const SubTitle = ({ subTitle }: SubTitleProps): JSX.Element => {
   return (
     <h2
       className={
-        "text-xl text-start font-medium font-montserrat text-subheading"
+        "text-lg lg:text-3xl text-start font-medium font-montserrat text-subheading"
       }
     >
       {subTitle}

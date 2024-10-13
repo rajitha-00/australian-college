@@ -17,11 +17,11 @@ export default function Header() {
     <div className={"fixed bg-white w-full z-50 top-0 "}>
       <header
         className={
-          "fixed w-full   inset-x-0 top-0 z-50 bg-white px-2  lg:px-0 duration-300 "
+          "fixed w-full md:px-8  inset-x-0 top-0 z-50 bg-white px-2   duration-300 "
         }
       >
         <nav
-          className="flex items-center justify-between p-2 py-3 lg:px-0 mx-auto max-w-[1300px]"
+          className="flex items-center justify-between p-2 py-3  mx-auto max-w-[1300px]"
           aria-label="Global"
         >
           <div className="flex items-center gap-16">

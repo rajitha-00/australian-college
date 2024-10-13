@@ -21,7 +21,7 @@ export default function Home() {
             'url("https://raw.githubusercontent.com/rajitha-00/acbt-blob/refs/heads/main/ACBT-Hero-New-v1.png")',
         }}
       ></div>
-      <div className="relative z-10 px-5 mx-auto max-w-[1300px] lg:px-0 flex items-center justify-center md:justify-normal flex-col min-h-[100vh]">
+      <div className="relative z-10 px-5 mx-auto max-w-[1300px]  flex items-center justify-center md:justify-normal flex-col min-h-[100vh]">
         <div className="px-5 space-y-5 flex items-center justify-center flex-col pt:36 md:pt-44">
           <h1
             className="text-3xl md:text-7xl text-center font-semibold bg-gradient-to-r from-[#007354] via-[#007756] to-[#00d79c] bg-clip-text text-transparent"

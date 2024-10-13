@@ -7,7 +7,7 @@ export const PageTitle = ({ title, title2 }: PageTitleProps): JSX.Element => {
   return (
     <h2
       className={
-        "text-3xl text-start font-semibold font-montserrat text-subheading"
+        "text-xl lg:text-3xl text-start font-semibold font-montserrat text-subheading"
       }
     >
       {title} <br />
