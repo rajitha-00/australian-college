@@ -1,95 +1,60 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import "./globals.css"; // Import global styles
+import { Search } from "@/components/Search";
+import {
+  CoursesCategories,
+  DiscoverPathway,
+  InsightCard,
+  SectionHeader,
+  UniversitiesSection,
+} from "@/components";
+import { insightsData } from "@/constants";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <>
+      {/* Background Image */}
+      <div
+        className="absolute inset-x-0 -bottom-28 lg:-bottom-3 h-full lg:h-2/3 bg-no-repeat bg-center"
+        style={{
+          backgroundImage:
+            'url("https://raw.githubusercontent.com/rajitha-00/acbt-blob/refs/heads/main/ACBT-Hero-New-v1.png")',
+        }}
+      ></div>
+      <div className="relative z-10 px-5 mx-auto max-w-[1300px] lg:px-0 flex items-center justify-center md:justify-normal flex-col min-h-[100vh]">
+        <div className="px-5 space-y-5 flex items-center justify-center flex-col pt:36 md:pt-44">
+          <h1
+            className="text-3xl md:text-7xl text-center font-semibold bg-gradient-to-r from-[#007354] via-[#007756] to-[#00d79c] bg-clip-text text-transparent"
+            style={{ lineHeight: "1.2" }}
           >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
+            Australian College
+          </h1>
+          <h2
+            className="text-lg md:text-4xl text-subheading text-center font-semibold"
+            style={{ lineHeight: "1.2" }}
           >
-            Read our docs
-          </a>
+            Shaping Your Future with <br /> Confidence and Success.
+          </h2>
+          <Search />
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+      </div>
+      <CoursesCategories />
+      <SectionHeader
+        title="Global Qualifications, Trusted for Success"
+        text="ACBT, an Australian college with campuses in Colombo and Kandy, offers globally recognized qualifications in IT, Business, and Healthcare (Nursing). Whether you're looking to advance your career locally or continue your studies in Australia, our trusted programs equip you with the skills and credentials to achieve success on a global scale."
+      />
+      <div className="px-5 mx-auto max-w-[1300px] lg:px-0 flex flex-wrap justify-center">
+        {insightsData.map((course) => (
+          <InsightCard
+            imageUrl={course.imageUrl}
+            text={course.text}
+            value={course.value}
+            key={course.text}
           />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        ))}
+      </div>
+      <DiscoverPathway />
+      {/* Section Universities */}
+      <UniversitiesSection />
+    </>
   );
 }
