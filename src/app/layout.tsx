@@ -1,3 +1,4 @@
+// app/layout.tsx
 import "./globals.css"; // Import global styles
 import { Montserrat } from "next/font/google";
 import type { Metadata } from "next";

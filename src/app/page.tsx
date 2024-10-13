@@ -69,7 +69,7 @@ export default function Home() {
           alt=""
           description="We’re here to help you explore your educational journey. Whether you need more information about our programs, campuses, or university partnerships, our team is ready to assist. Don’t hesitate to reach out!"
           path={
-            "https://raw.githubusercontent.com/rajitha-00/acbt-blob/refs/heads/main/ACBT-Hero.png"
+            "https://raw.githubusercontent.com/rajitha-00/acbt-blob/refs/heads/main/Contact%20Us.png"
           }
           subTitle=""
           title="Have Questions? Let's Connect!"
