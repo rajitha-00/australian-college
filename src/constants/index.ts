@@ -7,22 +7,22 @@ export const navigation = [
 export const courses = [
   {
     name: "Computing",
-    url: "https://raw.githubusercontent.com/rajitha-00/acbt-blob/refs/heads/main/ACBT-Hero.png",
+    url: "https://img.freepik.com/free-photo/it-specialist-writing-html-script-binary-code-database-security_482257-92458.jpg?t=st=1728830791~exp=1728834391~hmac=f3b5df7e5c3a9b8a7284611cb97f5243925f608a77c3857f997c10e4b8ab97dd&w=1380",
     alt: "Computing Program",
   },
   {
     name: "Nursing",
-    url: "https://raw.githubusercontent.com/rajitha-00/acbt-blob/refs/heads/main/ACBT-Hero.png",
+    url: "https://img.freepik.com/free-photo/team-young-specialist-doctors-standing-corridor-hospital_1303-21199.jpg?t=st=1728830953~exp=1728834553~hmac=3cc9615cdb402d3bee6d17c4df85b70e3f8ea5d4831f039ecf94312d071fa392&w=996",
     alt: "Nursing Program",
   },
   {
     name: "Business",
-    url: "https://raw.githubusercontent.com/rajitha-00/acbt-blob/refs/heads/main/ACBT-Hero.png",
+    url: "https://img.freepik.com/free-photo/business-concept-with-team-close-up_23-2149151159.jpg?t=st=1728831005~exp=1728834605~hmac=3840b27394665f6a1e68afb953ab733a8465c70bda103bfbc35248e1c60ea7d4&w=996",
     alt: "Business Program",
   },
   {
     name: "Science",
-    url: "https://raw.githubusercontent.com/rajitha-00/acbt-blob/refs/heads/main/ACBT-Hero.png",
+    url: "https://img.freepik.com/free-photo/front-view-male-chemist-medical-suit-sitting-writing-something-white-background-virus-covid-splash-disease-science_140725-77648.jpg?t=st=1728831207~exp=1728834807~hmac=d0ad6c4a980c6d96915fe1f44c1eb94961789a359902ed7d1b6c8ef7bc7d19aa&w=996",
     alt: "Science Program",
   },
 ];
