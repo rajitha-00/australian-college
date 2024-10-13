@@ -1,3 +1,4 @@
+"use client";
 import "./globals.css"; // Import global styles
 import { Search } from "@/components/Search";
 import {
@@ -9,11 +10,13 @@ import {
 } from "@/components";
 import { insightsData } from "@/constants";
 import { ImageRightSection } from "@/components/imageRightSection";
+import { Fade } from "react-awesome-reveal";
 
 export default function Home() {
   return (
     <>
       {/* Background Image */}
+
       <div
         className="absolute inset-x-0 -bottom-28 lg:-bottom-3 h-full lg:h-2/3 bg-no-repeat bg-center"
         style={{
@@ -23,19 +26,25 @@ export default function Home() {
       ></div>
       <div className="relative z-10 px-5 mx-auto max-w-[1300px]  flex items-center justify-center md:justify-normal flex-col min-h-[100vh]">
         <div className="px-5 space-y-5 flex items-center justify-center flex-col pt:36 md:pt-44">
-          <h1
-            className="text-3xl md:text-7xl text-center font-semibold bg-gradient-to-r from-[#007354] via-[#007756] to-[#00d79c] bg-clip-text text-transparent"
-            style={{ lineHeight: "1.2" }}
-          >
-            Australian College
-          </h1>
-          <h2
-            className="text-lg md:text-4xl text-subheading text-center font-semibold"
-            style={{ lineHeight: "1.2" }}
-          >
-            Shaping Your Future with <br /> Confidence and Success.
-          </h2>
-          <Search />
+          <Fade triggerOnce direction="up">
+            <h1
+              className="text-3xl md:text-7xl text-center font-semibold bg-gradient-to-r from-[#007354] via-[#007756] to-[#00d79c] bg-clip-text text-transparent"
+              style={{ lineHeight: "1.2" }}
+            >
+              Australian College
+            </h1>
+          </Fade>
+          <Fade triggerOnce direction="up">
+            <h2
+              className="text-lg md:text-4xl text-subheading text-center font-semibold"
+              style={{ lineHeight: "1.2" }}
+            >
+              Shaping Your Future with <br /> Confidence and Success.
+            </h2>
+          </Fade>
+          <Fade triggerOnce direction="up">
+            <Search />
+          </Fade>
         </div>
       </div>
       <CoursesCategories />
@@ -45,12 +54,14 @@ export default function Home() {
       />
       <div className="px-5 mx-auto max-w-[1300px] lg:px-0 flex flex-wrap justify-center">
         {insightsData.map((course) => (
-          <InsightCard
-            imageUrl={course.imageUrl}
-            text={course.text}
-            value={course.value}
-            key={course.text}
-          />
+          <Fade key={course.text} triggerOnce direction="up">
+            <InsightCard
+              imageUrl={course.imageUrl}
+              text={course.text}
+              value={course.value}
+              key={course.text}
+            />
+          </Fade>
         ))}
       </div>
       <DiscoverPathway />

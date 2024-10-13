@@ -1,4 +1,6 @@
+"use client";
 import { fieldsData } from "@/constants";
+import { Fade } from "react-awesome-reveal";
 
 export const DiscoverPathway = () => {
   return (
@@ -12,12 +14,15 @@ export const DiscoverPathway = () => {
             key={field.value}
             className="w-1/2 md:w-1/3 lg:w-1/4 p-2 flex items-center "
           >
-            <div className="flex items-center space-x-2 hover:bg-accentColor p-1 rounded-lg">
-              <span className="text-2xl">{field.icon}</span>
-              <p className="font-montserrat text-start text-[12px] md:text-[14px] text-subheading hover:text-primary-main font-semibold">
-                {field.value}
-              </p>
-            </div>
+            {" "}
+            <Fade key={field.value} triggerOnce direction="up">
+              <div className="flex items-center space-x-2 hover:bg-accentColor p-1 rounded-lg">
+                <span className="text-2xl">{field.icon}</span>
+                <p className="font-montserrat text-start text-[12px] md:text-[14px] text-subheading hover:text-primary-main font-semibold">
+                  {field.value}
+                </p>
+              </div>
+            </Fade>
           </div>
         ))}
       </div>

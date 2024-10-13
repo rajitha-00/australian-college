@@ -3,6 +3,7 @@ import "./globals.css"; // Import global styles
 import { Montserrat } from "next/font/google";
 import type { Metadata } from "next";
 import Header from "@/components/header/Header";
+import { ScrollToTopButton } from "@/components";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -26,9 +27,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="md:px-8">
+      <body>
         <Header />
-        <div className={montserrat.className}>{children}</div>
+        <div className="md:px-8 overflow-hidden bg-white ">
+          <div className={montserrat.className}>{children}</div>
+        </div>
+        <ScrollToTopButton />
       </body>
     </html>
   );

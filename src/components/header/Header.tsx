@@ -17,11 +17,11 @@ export default function Header() {
     <div className={"fixed bg-white w-full z-50 top-0 "}>
       <header
         className={
-          "fixed w-full md:px-8  inset-x-0 top-0 z-50 bg-white px-2   duration-300 "
+          "fixed w-full md:px-8 border-b-2 border-accentColor inset-x-0 top-0 z-50 bg-white px-2   duration-300 "
         }
       >
         <nav
-          className="flex items-center justify-between p-2 py-3  mx-auto max-w-[1300px]"
+          className="flex items-center justify-between  p-2 py-2  mx-auto max-w-[1300px]"
           aria-label="Global"
         >
           <div className="flex items-center gap-16">
@@ -29,8 +29,8 @@ export default function Header() {
               <Link href="/">
                 <span className="sr-only">ACBT</span>
                 <Image
-                  className="md:w-44 w-36 cursor-pointer"
-                  width={200}
+                  className=" cursor-pointer"
+                  width={150}
                   height={200}
                   src={
                     "https://raw.githubusercontent.com/rajitha-00/acbt-blob/5f8fdf7f01043b2cac2b0c4e82699171d21add50/Logo-Dark.svg"
@@ -46,12 +46,12 @@ export default function Header() {
                   key={item.name}
                   href={item.href}
                   passHref
-                  className={`text-md font-[600] font-montserrat leading-6  "text-white border-white"
+                  className={`text-md font-[600] font-montserrat leading-6 "text-white border-white"
                      ${
                        pathname.includes(item.name.toLowerCase()) ||
                        (pathname === "/" && item.index === "1")
-                         ? "border-b-2"
-                         : "border-b-0"
+                         ? " text-primary-main "
+                         : "  text-subheading"
                      }`}
                 >
                   {item.name}

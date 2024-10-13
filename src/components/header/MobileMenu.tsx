@@ -26,7 +26,7 @@ export const MobileMenu = ({
       <div
         className={`bg-white absolute top-0 z-30 h-screen right-0 px-5 py-5 ${
           open
-            ? "translate-x-0 duration-300 md:w-1/2 sm:w-full"
+            ? "translate-x-0 duration-300 md:w-1/2 w-full"
             : "translate-x-full duration-300"
         }`}
       >
@@ -46,7 +46,7 @@ export const MobileMenu = ({
             </Link>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 rounded-md p-2.5 text-subheading"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
@@ -73,7 +73,7 @@ export const MobileMenu = ({
                   key={1}
                   href={"/contact"}
                   passHref
-                  className="-mx-3 block rounded-lg px-3 py-2 font-[600] font-montserrat leading-7 text-experneticColor hover:text-[#49C0B6]"
+                  className="-mx-3 block rounded-lg px-3 py-2 font-[600] font-montserrat leading-7 text-experneticColor hover:text-primary-main"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Contact Us
