@@ -4,6 +4,7 @@ import { Montserrat } from "next/font/google";
 import type { Metadata } from "next";
 import Header from "@/components/header/Header";
 import { ScrollToTopButton } from "@/components";
+import FooterMain from "@/components/footer/FooterMain";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
           <div className={montserrat.className}>{children}</div>
         </div>
         <ScrollToTopButton />
+        <FooterMain />
       </body>
     </html>
   );

@@ -29,7 +29,7 @@ export const ImageLeftSection = ({
         <div className="md:col-span-1 lg:col-span-2 md:mt-0">
           <Fade triggerOnce direction="left">
             <Image
-              className="h-auto md:w-full mx-auto rounded-[8px] md:rounded-20px]"
+              className="h-auto w-full md:w-full mx-auto rounded-[8px] md:rounded-20px]"
               width={400}
               height={400}
               src={path}

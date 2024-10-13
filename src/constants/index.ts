@@ -74,3 +74,41 @@ export const fieldsData = [
   { icon: "🌍", value: "International Business" },
   { icon: "🖌️", value: "User Experience (UX) Design" },
 ];
+export const quickLinks = [
+  { name: "Explore Our Programs", url: "#" },
+  { name: "Study in Sri Lanka", url: "#" },
+  { name: "Study in the UK", url: "#" },
+  { name: "Study in Australia", url: "#" },
+  { name: "Contact Us", url: "#" },
+  { name: "Find Our Campuses", url: "#" },
+];
+
+export const stayConnected = [
+  { name: "Email: info@acbt.lk", url: "mailto:info@acbt.lk" },
+  { name: "Call Us: +94 (0) 11 2565511", url: "tel:+94112565511" },
+  { name: "Campus: Colombo", url: "#" },
+  { name: "Campus: Kandy", url: "#" },
+];
+
+export const followUs = [
+  {
+    name: "Facebook",
+    url: "https://facebook.com",
+    iconSrc: "https://www.svgrepo.com/show/448224/facebook.svg",
+  },
+  {
+    name: "Youtube",
+    url: "https://youtube.com",
+    iconSrc: "https://www.svgrepo.com/show/475700/youtube-color.svg",
+  },
+  {
+    name: "LinkedIn",
+    url: "https://linkedin.com",
+    iconSrc: "https://www.svgrepo.com/show/448234/linkedin.svg",
+  },
+  {
+    name: "Instagram",
+    url: "https://linkedin.com",
+    iconSrc: "https://www.svgrepo.com/show/452229/instagram-1.svg",
+  },
+];

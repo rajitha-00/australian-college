@@ -15,17 +15,24 @@ import { Fade } from "react-awesome-reveal";
 export default function Home() {
   return (
     <>
-      {/* Background Image */}
-
       <div
-        className="absolute inset-x-0 -bottom-28 lg:-bottom-3 h-full lg:h-2/3 bg-no-repeat bg-center"
+        className="absolute inset-x-0 -bottom-28 lg:-bottom-3 h-full lg:h-2/3 bg-no-repeat bg-center hidden md:block"
         style={{
           backgroundImage:
             'url("https://raw.githubusercontent.com/rajitha-00/acbt-blob/refs/heads/main/ACBT-Hero-New-v1.png")',
         }}
       ></div>
-      <div className="relative z-10 px-5 mx-auto max-w-[1300px]  flex items-center justify-center md:justify-normal flex-col min-h-[100vh]">
-        <div className="px-5 space-y-5 flex items-center justify-center flex-col pt:36 md:pt-44">
+
+      {/* Background for mobile screens */}
+      <div
+        className="absolute  bottom-[-440px] bg-contain h-full w-full bg-no-repeat block md:hidden"
+        style={{
+          backgroundImage:
+            'url("https://raw.githubusercontent.com/rajitha-00/acbt-blob/refs/heads/main/Mobile-Hero.png")',
+        }}
+      ></div>
+      <div className="relative z-10 px-5 mx-auto max-w-[1300px]  flex items-center justify-center md:justify-normal flex-col min-h-[80vh] md:min-h-[100vh]">
+        <div className="px-5 space-y-5 flex items-center justify-center flex-col pt:26 md:pt-44">
           <Fade triggerOnce direction="up">
             <h1
               className="text-3xl md:text-7xl text-center font-semibold bg-gradient-to-r from-[#007354] via-[#007756] to-[#00d79c] bg-clip-text text-transparent"
