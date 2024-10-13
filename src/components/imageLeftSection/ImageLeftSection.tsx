@@ -37,7 +37,7 @@ export const ImageLeftSection = ({
             />
           </Fade>
         </div>
-        <div className="md:col-span-1 lg:col-span-3mt-10 md:mt-0 justify-start flex flex-col items-start">
+        <div className="md:col-span-1 lg:col-span-3 mt-10 md:mt-0 justify-start flex flex-col items-start">
           <Fade triggerOnce direction="right">
             <Fade triggerOnce direction="up">
               <PageTitle title2={title2} title={title} />
