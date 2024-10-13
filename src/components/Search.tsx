@@ -8,8 +8,7 @@ export function Search() {
       <Button
         variant="secondary"
         type="submit"
-        className="bg-accentColor   text-primary-main
-        "
+        className="bg-accentColor text-primary-main"
         size={"icon"}
       >
         <MagnifyingGlassIcon className="size-6 text-primary-main" />

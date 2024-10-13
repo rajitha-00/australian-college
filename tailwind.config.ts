@@ -60,9 +60,7 @@ const config: Config = {
           "5": "hsl(var(--chart-5))",
         },
       },
-      fontFamily: {
-        montserrat: ['Montserrat"', "sans-serif"],
-      },
+
       fontSize: {
         title2: "36px",
       },

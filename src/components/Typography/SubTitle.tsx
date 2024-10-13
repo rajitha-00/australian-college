@@ -1,9 +1,8 @@
 type SubTitleProps = {
   subTitle: string;
-  start?: boolean;
 };
 
-export const SubTitle = ({ subTitle, start }: SubTitleProps): JSX.Element => {
+export const SubTitle = ({ subTitle }: SubTitleProps): JSX.Element => {
   return (
     <h2
       className={

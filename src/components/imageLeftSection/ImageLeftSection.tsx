@@ -44,12 +44,12 @@ export const ImageLeftSection = ({
             </Fade>
             <Fade triggerOnce direction="up">
               <div className="mt-4">
-                <SubTitle start subTitle={subTitle} />
+                <SubTitle subTitle={subTitle} />
               </div>
             </Fade>
             <Fade triggerOnce direction="up">
               <div className="mt-4">
-                <Paragraph start paragraph={description} />
+                <Paragraph paragraph={description} />
               </div>
             </Fade>
             <Fade triggerOnce direction="up">
