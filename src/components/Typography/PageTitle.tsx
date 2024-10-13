@@ -1,18 +1,17 @@
 type PageTitleProps = {
   title: string;
-  start?: boolean;
+  title2?: string;
 };
 
-export const PageTitle = ({ title, start }: PageTitleProps): JSX.Element => {
+export const PageTitle = ({ title, title2 }: PageTitleProps): JSX.Element => {
   return (
     <h2
       className={
-        start
-          ? " text-2xl md:text-4xl lg:text-5xl font-montserrat font-[500] md:text-start text-primaryColor"
-          : "text-2xl md:text-4xl lg:text-5xl font-montserrat font-[500] md:text-center text-primaryColor"
+        "text-3xl text-start font-semibold font-montserrat text-subheading"
       }
     >
-      {title}
+      {title} <br />
+      {title2}
     </h2>
   );
 };

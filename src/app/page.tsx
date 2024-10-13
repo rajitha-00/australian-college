@@ -8,6 +8,7 @@ import {
   UniversitiesSection,
 } from "@/components";
 import { insightsData } from "@/constants";
+import { ImageRightSection } from "@/components/imageRightSection";
 
 export default function Home() {
   return (
@@ -55,6 +56,27 @@ export default function Home() {
       <DiscoverPathway />
       {/* Section Universities */}
       <UniversitiesSection />
+      <SectionHeader
+        title="Why Choose ACBT?"
+        text="No matter where you decide to study locally or abroad ACBT is your gateway to an internationally recognized degree. With seamless transfer options and partnerships with top universities worldwide, your success begins here."
+      />
+      <SectionHeader
+        title="What’s happening at ACBT?"
+        text="No matter where you decide to study locally or abroad ACBT is your gateway to an internationally recognized degree. With seamless transfer options and partnerships with top universities worldwide, your success begins here."
+      />
+      <div className="px-5 mx-auto max-w-[1300px] lg:px-0 flex flex-wrap justify-center">
+        <ImageRightSection
+          alt=""
+          description="We’re here to help you explore your educational journey. Whether you need more information about our programs, campuses, or university partnerships, our team is ready to assist. Don’t hesitate to reach out!"
+          path={
+            "https://raw.githubusercontent.com/rajitha-00/acbt-blob/refs/heads/main/ACBT-Hero.png"
+          }
+          subTitle=""
+          title="Have Questions? Let's Connect!"
+          title2="Let's Connect!"
+          button="Contact Us"
+        />
+      </div>
     </>
   );
 }
