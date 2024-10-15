@@ -81,7 +81,7 @@ export default function Header() {
               <div
                 className={`inline-flex items-center  flex-none rounded-md px-3 py-2 text-md font-[600] font-montserrat ${"bg-accentColor text-primary-main  "} `}
               >
-                Contact Us
+                Enroll Today
                 <ArrowRightIcon
                   className={`ml-1.5 -mr-0.5 h-5 w-5 lg:font-[500] text-md font-montserrat  text-primary-main`}
                   aria-hidden="true"
