@@ -78,10 +78,7 @@ export default function Home() {
         title="Why Choose ACBT?"
         text="No matter where you decide to study locally or abroad ACBT is your gateway to an internationally recognized degree. With seamless transfer options and partnerships with top universities worldwide, your success begins here."
       />
-      <SectionHeader
-        title="What’s happening at ACBT?"
-        text="No matter where you decide to study locally or abroad ACBT is your gateway to an internationally recognized degree. With seamless transfer options and partnerships with top universities worldwide, your success begins here."
-      />
+  
       <div className="px-5 mx-auto max-w-[1300px] lg:px-0 flex flex-wrap justify-center">
         <ImageRightSection
           alt=""
