@@ -76,7 +76,7 @@ export const MobileMenu = ({
                   className="-mx-3 block rounded-lg px-3 py-2 font-[600] font-montserrat leading-7 text-experneticColor hover:text-primary-main"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Enroll Now
+                  Enroll Today
                 </Link>
               </div>
             </div>
